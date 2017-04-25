@@ -2,7 +2,11 @@
 
 #include "GCore/gobject.h"
 
-class GDataSet;
+namespace gcache {
+	class GDataSet;
+}
+
+namespace gcache {
 
 class GAPI GDataObject final
 {
@@ -15,3 +19,5 @@ private:
 	GDataSet *m_pDataSet;
 	gsize m_nRowId;
 };
+
+}

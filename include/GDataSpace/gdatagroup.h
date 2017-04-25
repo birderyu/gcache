@@ -2,7 +2,11 @@
 
 #include "GCore/gobject.h"
 
-class GDataSet;
+namespace gcache {
+	class GDataSet;
+}
+
+namespace gcache {
 
 class GAPI GDataGroup
 	: virtual public GObject
@@ -11,3 +15,5 @@ public:
 
 	GDataSet *GetSet(gint object_type);
 };
+
+}

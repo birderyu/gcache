@@ -2,8 +2,12 @@
 
 #include "GCore/gobject.h"
 
-class GDataGroup;
-class GDataObject;
+namespace gcache {
+	class GDataGroup;
+	class GDataObject;
+}
+
+namespace gcache {
 
 enum G_INDEX_TYPE
 {
@@ -51,3 +55,5 @@ protected:
 private:
 	GDataGroup *m_pDataGroup;
 };
+
+}
